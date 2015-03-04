@@ -1,16 +1,20 @@
 {
+  "dependencies": [],
+  "operatingsystem_support": [
+    {
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ],
+      "operatingsystem": "Ubuntu"
+    }
+  ],
   "name": "conzar-pgbouncer",
-  "version": "0.1.1",
+  "version": "99.99.99",
   "author": "Michael Speth",
   "summary": "Deploys pgbouncer",
   "license": "GPL-3.0+",
   "source": "git://github.com/Conzar/pgbouncer.git",
   "project_page": "https://github.com/Conzar/pgbouncer",
-  "issues_url": "https://github.com/Conzar/pgbouncer/issues",
-  "operatingsystem_support": [
-    { "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "12.04", "14.04" ] }
-  ],
-  "dependencies": [
-  ]
+  "issues_url": "https://github.com/Conzar/pgbouncer/issues"
 }
