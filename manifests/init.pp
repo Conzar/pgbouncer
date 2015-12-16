@@ -78,6 +78,9 @@ class pgbouncer (
   $listen_port = '6432',
   $admin_users = 'postgres',
   $stats_users = 'postgres',
+  $owner = 'pgbouncer',
+  $owner_group = 'pgbouncer',
+  $userlist_mode = '0600',
   $auth_type = 'trust',
   $auth_list = undef,
   $pool_mode = 'transaction'
@@ -119,6 +122,9 @@ class pgbouncer (
     ensure  => file,
     content => template('pgbouncer/userlist.txt.erb'),
     require => File[$conf],
+    owner   => $owner,
+    group   => $owner_group,
+    mode    => $userlist_mode,
   }
 
   service {'pgbouncer':
